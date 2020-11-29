@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 
 class Pertemuan1 extends StatefulWidget {
   Pertemuan1({Key key, this.title}) : super(key: key);
@@ -55,14 +57,29 @@ class _Pertemuan1State extends State<Pertemuan1> {
                 )
               ),
             RaisedButton(
-              focusColor: Colors.blue,
-              color:  Colors.blue,
               child: Text(
-                "Simpan",
-                style: TextStyle(
-                  color: Colors.white
-                ),
+                "Submit",
+                style: TextStyle(color: Colors.white),
               ),
+              color: Colors.white,
+              onPressed: (){
+                if (_formKey.currentState.validate()){}
+              },
+            ),
+            RaisedButton(
+              child: Text(
+                'Logout',
+                style: TextStyle(color: Colors.white),
+              ),
+              color: Colors.blue,
+              onPressed: () async {
+                SharedPreferences = await SharedPreferences.getInstance();
+                await pref.setInt("is_login", 0);
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyHomePage(title: 'Hallo Push',)),
+                );
+              },
             )
           ],
         ),
@@ -76,3 +93,4 @@ class _Pertemuan1State extends State<Pertemuan1> {
     );
   }
 }
+
