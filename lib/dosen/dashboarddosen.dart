@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -38,8 +37,8 @@ class _DashboardDosenState extends State<DashboardDosen> {
             children: <Widget>[
               ListTile(
                 leading: Icon(Icons.person),
-                title: Text("Jongjek Widodo, S.Kom., M.T."),
-                subtitle: Text("POI90UY6 - jongjek@staff.ukdw.ac.id"),
+                title: Text("Argo Wibowo, S.Kom., M.T."),
+                subtitle: Text("0512E392 - argo@staff.ukdw.ac.id"),
                 // CARA 1
                 // onLongPress: () {
                 //   showDialog(
@@ -79,8 +78,8 @@ class _DashboardDosenState extends State<DashboardDosen> {
               ),
               ListTile(
                 leading: Icon(Icons.person),
-                title: Text("Ir.Soekarno"),
-                subtitle: Text("K9JUI8G5 - soek@staff.ukdw.ac.id"),
+                title: Text("Drs. Jong Jek Siang, M.Sc."),
+                subtitle: Text("0921E23 - jjs@staff.ukdw.ac.id"),
                 trailing: PopupMenuButton(
                   itemBuilder: (_) => <PopupMenuItem<String>>[
                     new PopupMenuItem<String>(

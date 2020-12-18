@@ -37,8 +37,8 @@ class _DashboardMhsState extends State<DashboardMhs> {
             children: <Widget>[
               ListTile(
                 leading: Icon(Icons.person),
-                title: Text("Adhira Widya Permana"),
-                subtitle: Text("72170127 - adhira.widya@si.ukdw.ac.id"),
+                title: Text("Zefanya Anke Andini"),
+                subtitle: Text("72170167 - zefanya.anke@si.ukdw.ac.id"),
                 trailing: PopupMenuButton(
                   itemBuilder: (_) => <PopupMenuItem<String>>[
                     new PopupMenuItem<String>(
@@ -52,8 +52,8 @@ class _DashboardMhsState extends State<DashboardMhs> {
               ),
               ListTile(
                 leading: Icon(Icons.person),
-                title: Text("Adhira Widya Permana"),
-                subtitle: Text("72170127 - adhira.widya@si.ukdw.ac.id"),
+                title: Text("Brillianty Chlara Ambrelly"),
+                subtitle: Text("72170103 - brillianty.chlara@si.ukdw.ac.id"),
                 trailing: PopupMenuButton(
                   itemBuilder: (_) => <PopupMenuItem<String>>[
                     new PopupMenuItem<String>(
